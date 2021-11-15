@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="btn-alt-mode">
+                <button></button>
+            </div>
+            <p class="operator"></p>
+            <p class="result"></p>
+        </div>
+        <table>
+            <tr>
+                <td><button onclick="insert('7')">7</button></td>
+                <td><button onclick="insert('8')">8</button></td>
+                <td><button onclick="insert('9')">9</button></td>
+                <td><button onclick="clean('')"><i class="fas fa-arrow-left"></i></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('4')">4</button></td>
+                <td><button onclick="insert('5')">5</button></td>
+                <td><button onclick="insert('6')">6</button></td>
+                <td><button onclick="math('/')"><i class="fas fa-divide"></i></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('1')">1</button></td>
+                <td><button onclick="insert('2')">2</button></td>
+                <td><button onclick="insert('3')">3</button></td>
+                <td><button onclick="math('*')"><i class="fas fa-times"></i></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('0')">0</button></td>
+                <td><button onclick="insert('.')">.</button></td>
+                <td></td>
+                <td><button onclick="math('-')"><i class="fas fa-minus"></i></button></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button onclick="result('')" class="math"><i class="fas fa-equals"></i></button></td>
+                <td><button onclick="math('+')"><i class="fas fa-plus"></i></button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
